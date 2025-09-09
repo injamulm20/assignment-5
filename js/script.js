@@ -32,7 +32,7 @@ for (const button of copyButtons){
 
         navigator.clipboard.writeText(number).then(() => {
           copyCount++;
-          document.getElementById('copy-count').textContent = copyCount;
+          document.getElementById('copy-count').innerText = copyCount;
           
           const originalText = this.innerHTML;
           this.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
